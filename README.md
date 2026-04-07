@@ -13,7 +13,7 @@ sparse checkout for efficiency:
 { pkgs }:  
 let  
   walls = pkgs.fetchFromGitHub {  
-    owner = "username";  
+    owner = "Marcus441";  
     repo = "walls";  
     rev = "commit-hash";  
     hash = ""; # hash goes here 
@@ -29,7 +29,7 @@ in {
 Clone specific tiers without downloading the entire repository:
 
 ```bash
-git clone --filter=blob:none --sparse https://github.com/username/walls.git
+git clone --filter=blob:none --sparse https://github.com/Marcus441/walls.git
 cd walls
 git sparse-checkout set walled_tiers/4k/minimal walled_tiers/8k
 ```
